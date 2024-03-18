@@ -76,6 +76,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/39419369?v=4" width="100px;" alt=""/>
  <sub><b>Glauber Garcia</b></sub>
  <br />
+
 [![Linkedin Badge](https://img.shields.io/badge/-Glauber-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/glauber-lucas-garcia-correa-leite-33390b158/)](https://www.linkedin.com/in/glauber-lucas-garcia-correa-leite-33390b158/)
 [![Gmail Badge](https://img.shields.io/badge/-glaubercorreagarcia@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:glaubercorreagarcia@gmail.com)](mailto:glaubercorreagarcia@gmail.com)
 
