@@ -32,7 +32,7 @@ Esse projeto é um desafio que consiste em criar uma aplicação que consuma a a
 ## ⚙️ Funcionalidades
 
 * [x] Listagem de receitas baseadas no termo inserido na pesquisa;
-* [x] Detalhamento da receita com a imagem, nome e ingredientes necesários;
+* [x] Detalhamento da receita com a imagem, nome e ingredientes necessários;
 
 ---
 
@@ -56,7 +56,6 @@ $ npm install
 
 # execute o projeto
 $ ng serve
-
 # O servidor inciará na porta:4200 - acesse http://localhost:4200 
 ```
 
@@ -66,7 +65,8 @@ $ ng serve
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-* Linguagem : **[Angular](https://material.angular.io/)**
+* Framework Principal : **[Angular](https://material.angular.io/)**
+* Linguagens : **[TypeScript & Html]**
 * API:  **[Forkify](https://forkify-api.herokuapp.com/)**
 * IDE: **[Visual Studio Code](https://code.visualstudio.com/)
 * Framework CSS:  **[Angular Material](https://material.angular.io/)**
@@ -74,10 +74,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ## 🦸 Autor
 
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/39419369?v=4" width="100px;" alt=""/>
- <br />
  <sub><b>Glauber Garcia</b></sub>
  <br />
-
 [![Linkedin Badge](https://img.shields.io/badge/-Glauber-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/glauber-lucas-garcia-correa-leite-33390b158/)](https://www.linkedin.com/in/glauber-lucas-garcia-correa-leite-33390b158/)
 [![Gmail Badge](https://img.shields.io/badge/-glaubercorreagarcia@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:glaubercorreagarcia@gmail.com)](mailto:glaubercorreagarcia@gmail.com)
 
