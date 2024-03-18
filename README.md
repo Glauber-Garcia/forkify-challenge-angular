@@ -10,7 +10,7 @@
     <img alt="Feito por Glauber Garcia" src="https://img.shields.io/badge/feito%20por-Glauber Garcia-blue?style=for-the-badge&logo=appveyor"/>
   </p>
 <h4 align="center">
- 🚧   Concluído 🚀 🚧
+ 🚧   Em Análise 🚧
 </h4>
 
 Tabela de conteúdos
@@ -66,9 +66,9 @@ $ ng serve
 As seguintes ferramentas foram usadas na construção do projeto:
 
 * Framework Principal : **[Angular](https://material.angular.io/)**
-* Linguagens : **[TypeScript & Html]**
+* Linguagens : **TypeScript & Html**
 * API:  **[Forkify](https://forkify-api.herokuapp.com/)**
-* IDE: **[Visual Studio Code](https://code.visualstudio.com/)
+* IDE: **[Visual Studio Code](https://code.visualstudio.com/)**
 * Framework CSS:  **[Angular Material](https://material.angular.io/)**
 
 ## 🦸 Autor
