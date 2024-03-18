@@ -55,7 +55,7 @@ $ cd forkify-challenge-angular
 $ npm install
 
 # execute o projeto
-$ ng serve
+$ npm start
 # O servidor inciará na porta:4200 - acesse http://localhost:4200 
 ```
 
