@@ -1,0 +1,76 @@
+<mat-card class="card">
+    <mat-card-header>
+        <mat-card-title>Pesquisa de Receitas</mat-card-title>
+        <mat-card-subtitle>
+            <mat-form-field class="example-form-field" [style]="'width: 97vw;'">
+                <mat-label>Pesquisar</mat-label>
+                <input matInput type="text" [(ngModel)]="searchString" (keyup.enter)="onSearch()">
+                <button matSuffix mat-icon-button (click)="onSearch()" matTooltip="Pesquisar">
+                    <mat-icon>search</mat-icon>
+                </button>
+                <button matSuffix mat-icon-button (click)="openDialogTerms()" matTooltip="Lista de Termos Permitidos">
+                    <mat-icon>info</mat-icon>
+                </button>
+            </mat-form-field>
+        </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-card-subtitle></mat-card-subtitle>
+        <div *ngIf="recipesList.length > 0">
+            <table mat-table [dataSource]="recipesList" class="mat-elevation-z8" matSort>
+                <ng-container matColumnDef="title">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Title </th>
+                    <td mat-cell *matCellDef="let element"> {{element.title}} </td>
+                </ng-container>
+                <ng-container matColumnDef="publisher">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Publisher </th>
+                    <td mat-cell *matCellDef="let element"> {{element.publisher}} </td>
+                </ng-container>
+                <ng-container matColumnDef="image">
+                    <th mat-header-cell *matHeaderCellDef > Image </th>
+                    <td mat-cell *matCellDef="let element">
+                        <img id=img mat-card-sm-image src="{{element.image_url}}">
+                    </td>
+                </ng-container>
+                <ng-container matColumnDef="details">
+                    <th mat-header-cell *matHeaderCellDef>Details</th>
+                    <td mat-cell *matCellDef="let element">
+                        <button mat-icon-button routerLink="/recipes-detail/{{element.recipe_id}}"
+                            [queryParams]="{'search':searchString}">
+                            <mat-icon>open_in_new</mat-icon>
+                        </button>
+                    </td>
+                </ng-container>
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+        </div>
+        <div *ngIf="recipesList.length === 0">
+            <table mat-table [dataSource]="recipesList" class="mat-elevation-z8">
+                <ng-container matColumnDef="title">
+                    <th mat-header-cell *matHeaderCellDef> Title </th>
+                    <td mat-cell *matCellDef="let element"> {{element.title}} </td>
+                </ng-container>
+                <ng-container matColumnDef="publisher">
+                    <th mat-header-cell *matHeaderCellDef> Publisher </th>
+                    <td mat-cell *matCellDef="let element"> {{element.publisher}} </td>
+                </ng-container>
+                <ng-container matColumnDef="image">
+                    <th mat-header-cell *matHeaderCellDef> Image </th>
+                    <td mat-cell *matCellDef="let element"> <img mat-card-sm-image src="{{element.image_url}}"> </td>
+                </ng-container>
+                <ng-container matColumnDef="details">
+                    <th mat-header-cell *matHeaderCellDef> </th>
+                    <td mat-cell *matCellDef="let element">
+                        <button mat-icon-button routerLink="/recipes-detail/{{element.recipe_id}}"
+                            [queryParams]="{'search':searchString}">
+                            <mat-icon>open_in_new</mat-icon>
+                        </button>
+                    </td>
+                </ng-container>
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+        </div>
+    </mat-card-content>
+</mat-card>

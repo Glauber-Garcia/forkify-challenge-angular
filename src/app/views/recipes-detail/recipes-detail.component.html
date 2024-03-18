@@ -1,0 +1,23 @@
+<mat-card class="card" [class.mat-elevation-z8]="true">
+  <div class="example-loading-shade" *ngIf="isLoadingResults">
+    <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+  </div>
+  <mat-card-actions>
+    <button mat-button (click)="onBack()"> <mat-icon>arrow_back</mat-icon>Voltar</button>
+  </mat-card-actions>
+  <mat-card-header>
+    <img id="image" mat-card-image src="{{recipe?.image_url}}" alt="Photo of a Shiba Inu">
+  </mat-card-header>
+  <div class="title">
+    <mat-card-title>{{recipe?.title}}</mat-card-title>
+    <mat-card-subtitle>{{recipe?.publisher}}</mat-card-subtitle>
+  </div>
+  <mat-card-content id="content">
+    <mat-selection-list #shoes>
+      @for (recipe of this.recipe?.ingredients; track recipe) {
+      <mat-list-option> <span matListItemTitle>{{recipe}}</span></mat-list-option>
+      }
+    </mat-selection-list>
+
+  </mat-card-content>
+</mat-card>
